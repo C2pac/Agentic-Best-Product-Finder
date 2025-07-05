@@ -1,5 +1,7 @@
 import os
 from dotenv import load_dotenv
+import requests
+import json
 from crewai import LLM
 from tavily import TavilyClient
 from scrapegraph_py import Client

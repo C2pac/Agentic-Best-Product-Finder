@@ -1,19 +1,15 @@
-2025-07-05 13:55:07,434 - INFO - AgentOps: 'crewai' is the first-targeted agentic library. Will uninstrument providers if any are/become active.
-2025-07-05 13:55:07,445 - INFO - AgentOps: Successfully instrumented 'CrewaiInstrumentor' for package 'agentops.instrumentation.agentic.crewai'.
-2025-07-05 13:55:07,446 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=2388c6b8c03e92f7e104b3526d47bdfe
-2025-07-05 13:55:07,534 - ERROR - Error in span google/gemini-2.0-flash-exp:free.llm: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=google/gemini-2.0-flash-exp:free
- Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
-2025-07-05 13:55:07,546 - ERROR - Error in span Search Queries Recommendation Agent.agent: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=google/gemini-2.0-flash-exp:free
- Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
-2025-07-05 13:55:07,546 - ERROR - Error in span Rankyx is looking to buy Blender for Smoothies at the best prices (value for a price strategy)
+2025-07-05 14:08:47,724 - INFO - AgentOps: 'crewai' is the first-targeted agentic library. Will uninstrument providers if any are/become active.
+2025-07-05 14:08:47,757 - INFO - AgentOps: Successfully instrumented 'CrewaiInstrumentor' for package 'agentops.instrumentation.agentic.crewai'.
+2025-07-05 14:08:47,758 - INFO - Session Replay for default trace: https://app.agentops.ai/sessions?trace_id=0337dcc025bd4e8b546d24613ed0df84
+2025-07-05 14:08:48,745 - ERROR - Error in span openrouter/cypher-alpha:free.llm: litellm.BadRequestError: OpenrouterException - {"error":{"message":"cypher-alpha:free is not a valid model ID","code":400},"user_id":"user_2zSKIpTvthYYcdEkXUOEz30aI8X"}
+2025-07-05 14:08:48,764 - ERROR - Error in span Search Queries Recommendation Agent.agent: litellm.BadRequestError: OpenrouterException - {"error":{"message":"cypher-alpha:free is not a valid model ID","code":400},"user_id":"user_2zSKIpTvthYYcdEkXUOEz30aI8X"}
+2025-07-05 14:08:48,778 - ERROR - Error in span Rankyx is looking to buy Blender for Smoothies at the best prices (value for a price strategy)
 The company targets any of these websites to buy from: ['https://www.electroplanet.ma/', 'https://www.jumia.ma/', 'https://www.marjane.ma/']
 The company wants to reach all available products on the internet to be compared later in another stage.
 The stores must sell the product in morocco
-Generate at maximum 10 queries.
+Generate at maximum 5 queries.
 The search keywords must be in English language.
 Search keywords must contain specific brands, types or technologies. Avoid general keywords.
-The search query must reach an ecommerce webpage for product, and not a blog or listing page..task: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=google/gemini-2.0-flash-exp:free
- Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
-2025-07-05 13:55:07,546 - ERROR - Error in span crewai.workflow: litellm.BadRequestError: LLM Provider NOT provided. Pass in the LLM provider you are trying to call. You passed model=google/gemini-2.0-flash-exp:free
- Pass model as E.g. For 'Huggingface' inference endpoints pass in `completion(model='huggingface/starcoder',..)` Learn more: https://docs.litellm.ai/docs/providers
-2025-07-05 13:55:09,086 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=2388c6b8c03e92f7e104b3526d47bdfe
+The search query must reach an ecommerce webpage for product, and not a blog or listing page..task: litellm.BadRequestError: OpenrouterException - {"error":{"message":"cypher-alpha:free is not a valid model ID","code":400},"user_id":"user_2zSKIpTvthYYcdEkXUOEz30aI8X"}
+2025-07-05 14:08:48,789 - ERROR - Error in span crewai.workflow: litellm.BadRequestError: OpenrouterException - {"error":{"message":"cypher-alpha:free is not a valid model ID","code":400},"user_id":"user_2zSKIpTvthYYcdEkXUOEz30aI8X"}
+2025-07-05 14:08:50,196 - INFO - Session Replay for default.session trace: https://app.agentops.ai/sessions?trace_id=0337dcc025bd4e8b546d24613ed0df84

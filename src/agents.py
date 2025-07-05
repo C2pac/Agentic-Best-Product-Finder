@@ -2,7 +2,7 @@ from crewai import Agent
 from crewai.tools import tool
 from pydantic import BaseModel, Field
 from typing import List
-import JSON 
+import json 
 from src.config import basic_llm, search_client, scrape_client
 
 # Pydantic Models
