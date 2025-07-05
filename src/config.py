@@ -11,11 +11,11 @@ load_dotenv()
 # API Keys
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 AGENTOPS_API_KEY = os.getenv("AGENTOPS_API_KEY")
-TVLY_API_KEY = os.getenv("TVLY_API_KEY")
+TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 SCRAPEGRAPH_API_KEY = os.getenv("SCRAPEGRAPH_API_KEY")
 
 # Initialize clients
-search_client = TavilyClient(api_key=TVLY_API_KEY)
+search_client = TavilyClient(api_key=TAVILY_API_KEY)
 scrape_client = Client(api_key=SCRAPEGRAPH_API_KEY)
 
 # LLM Configuration (Using Gemini)
@@ -31,5 +31,5 @@ company_context = StringKnowledgeSource(content=ABOUT_COMPANY)
 
 # Constants
 NO_KEYWORDS = 10
-SCORE_THRESHOLD = 0.10
+SCORE_THRESHOLD = 0.50
 TOP_RECOMMENDATIONS_NO = 10

@@ -40,11 +40,11 @@ if __name__ == "__main__":
     crew_results = rankyx_crew.kickoff(
         inputs={
             "product_name": "Blender for Smoothies",
-            "websites_list": ["www.amazon.com", "www.jumia.ma", "www.marjane.ma"],
+            "websites_list": ["https://www.electroplanet.ma/", "https://www.jumia.ma/", "https://www.marjane.ma/"],
             "country_name": "morocco",
             "no_keywords": 10,
             "language": "English",
-            "score_th": 0.10,
+            "score_th": 0.50,
             "top_recommendations_no": 10
         }
     )
