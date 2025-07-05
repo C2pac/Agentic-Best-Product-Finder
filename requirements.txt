@@ -7,3 +7,7 @@ python-dotenv
 google-generativeai
 openai
 langchain
+transformers
+accelerate
+pydantic
+bitsandbytes
