@@ -9,7 +9,7 @@ from crewai.knowledge.source.string_knowledge_source import StringKnowledgeSourc
 load_dotenv()
 
 # API Keys
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 AGENTOPS_API_KEY = os.getenv("AGENTOPS_API_KEY")
 TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
 SCRAPEGRAPH_API_KEY = os.getenv("SCRAPEGRAPH_API_KEY")
@@ -18,8 +18,17 @@ SCRAPEGRAPH_API_KEY = os.getenv("SCRAPEGRAPH_API_KEY")
 search_client = TavilyClient(api_key=TAVILY_API_KEY)
 scrape_client = Client(api_key=SCRAPEGRAPH_API_KEY)
 
-# LLM Configuration (Using Gemini)
-basic_llm = LLM(model="gemini/gemini-1.5-pro", api_key=GEMINI_API_KEY, temperature=0)
+# LLM Configuration (Using OpenRouter with Gemini 2.0 Flash Experimental)
+basic_llm = LLM(
+    model="google/gemini-2.0-flash-exp:free",
+    api_key=OPENROUTER_API_KEY,
+    base_url="https://openrouter.ai/api/v1",
+    temperature=0,
+    custom_headers={
+        "HTTP-Referer": "https://github.com/C2pac/Agentic-Best-Product-Finder",
+        "X-Title": "Agentic-Product-Finder"
+    }
+)
 
 # Output directory
 OUTPUT_DIR = "./ai-agent-output"

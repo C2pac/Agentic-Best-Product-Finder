@@ -1,4 +1,5 @@
 from crewai import Crew, Process
+import os 
 from src.config import company_context
 from src.agents import (
     search_queries_recommendation_agent, search_engine_agent, scraping_agent,
