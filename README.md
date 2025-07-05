@@ -52,9 +52,8 @@ CrewAI
 Multi-agent orchestration and task flow
 
 
-OpenRouter (Gemini 2.0 Flash)
+OpenRouter (Cypher Alpha)
 Large Language Model for content generation and analysis
-
 
 Tavily API
 Real-time web search for e-commerce products

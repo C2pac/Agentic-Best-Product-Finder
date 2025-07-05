@@ -20,14 +20,10 @@ scrape_client = Client(api_key=SCRAPEGRAPH_API_KEY)
 
 # LLM Configuration (Using OpenRouter with Gemini 2.0 Flash Experimental)
 basic_llm = LLM(
-    model="google/gemini-2.0-flash-exp:free",
+    model="openrouter/cypher-alpha:free",
     api_key=OPENROUTER_API_KEY,
     base_url="https://openrouter.ai/api/v1",
     temperature=0,
-    custom_headers={
-        "HTTP-Referer": "https://github.com/C2pac/Agentic-Best-Product-Finder",
-        "X-Title": "Agentic-Product-Finder"
-    }
 )
 
 # Output directory
@@ -39,6 +35,6 @@ ABOUT_COMPANY = "Rankyx is a company that provides AI solutions to help websites
 company_context = StringKnowledgeSource(content=ABOUT_COMPANY)
 
 # Constants
-NO_KEYWORDS = 10
+NO_KEYWORDS = 5
 SCORE_THRESHOLD = 0.50
-TOP_RECOMMENDATIONS_NO = 10
+TOP_RECOMMENDATIONS_NO = 5
